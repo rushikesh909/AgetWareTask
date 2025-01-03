@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Piggy Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Piggy Bank</h1>
+    </header>
+    <main>
+        <div id="accountInfo">
+            <h2>Your Balance: $<span id="accountBalance">0.00</span></h2>
+        </div>
+
+        <div id="functions">
+            <div class="function-box">
+                <button id="addMoneyButton">Add Money</button>
+                <div id="addMoneyForm" class="hidden">
+                    <input type="number" id="addAmount" placeholder="Amount to Add">
+                    <button id="confirmAddButton">Confirm</button>
+                </div>
+            </div>
+
+            <div class="function-box">
+                <button id="breakPiggyBankButton">Break Piggy Bank</button>
+            </div>
+        </div>
+
+        <div id="transactions">
+            <h3>Transaction History</h3>
+            <ul id="transactionList">
+                <li>No transactions yet.</li>
+            </ul>
+        </div>
+    </main>
+    <script src="viewPiggyBank.js"></script>
+</body>
+</html>
